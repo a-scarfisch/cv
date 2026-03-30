@@ -1,0 +1,89 @@
+/* 1. Fondo general y color de texto */
+body {
+    background-color: #0d0d0d; /* Negro profundo */
+    color: #e0e0e0;           /* Gris muy claro para lectura */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Encabezado y Títulos */
+h1.text-primary, .display-4 {
+    color: #bc13fe !important; /* Morado Neón */
+    text-shadow: 0 0 10px #bc13fe, 0 0 20px #bc13fe; /* Efecto resplandor */
+}
+
+/* 3. Acordeón Dark */
+.accordion-item {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+}
+
+.accordion-button {
+    background-color: #1a1a1a;
+    color: #bc13fe;
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #262626;
+    color: #bc13fe;
+    box-shadow: inset 0 -1px 0 rgba(188, 19, 254, 0.2);
+}
+
+.accordion-button::after {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(240deg); /* Flecha morada */
+}
+
+/* 4. Listas y Badges */
+.list-group-item {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    border-color: #333;
+}
+
+.badge.text-bg-primary {
+    background-color: #bc13fe !important;
+    box-shadow: 0 0 8px #bc13fe;
+}
+
+/* 5. Cards de Portafolio */
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #bc13fe; /* Borde neón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
+}
+
+.card-title {
+    color: #bc13fe;
+}
+
+/* 6. Botones Neón */
+.btn-dark {
+    background-color: #bc13fe;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #d152ff;
+    box-shadow: 0 0 20px #bc13fe;
+    color: #fff;
+}
+
+/* 7. Links */
+a {
+    color: #bc13fe;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d152ff;
+    text-decoration: underline;
+}
